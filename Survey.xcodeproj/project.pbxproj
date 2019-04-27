@@ -16,6 +16,11 @@
 		0BA70BE82274EF9000FEEC11 /* CombinedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA70BE72274EF9000FEEC11 /* CombinedViewController.swift */; };
 		0BA70BEA2274EFCE00FEEC11 /* PollingTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA70BE92274EFCE00FEEC11 /* PollingTabBarViewController.swift */; };
 		0BA70BEC2274F02A00FEEC11 /* Vote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA70BEB2274F02A00FEEC11 /* Vote.swift */; };
+		0BA70BEE2274F0CE00FEEC11 /* VoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA70BED2274F0CE00FEEC11 /* VoteController.swift */; };
+		0BA70BF02274F14C00FEEC11 /* Voting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BA70BEF2274F14C00FEEC11 /* Voting.storyboard */; };
+		0BA70BF22274F16200FEEC11 /* Results.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BA70BF12274F16200FEEC11 /* Results.storyboard */; };
+		0BA70BF42274F18700FEEC11 /* Combined.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BA70BF32274F18700FEEC11 /* Combined.storyboard */; };
+		0BA70BF82274F2EE00FEEC11 /* VoteControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA70BF72274F2EE00FEEC11 /* VoteControllerProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +35,11 @@
 		0BA70BE72274EF9000FEEC11 /* CombinedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinedViewController.swift; sourceTree = "<group>"; };
 		0BA70BE92274EFCE00FEEC11 /* PollingTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollingTabBarViewController.swift; sourceTree = "<group>"; };
 		0BA70BEB2274F02A00FEEC11 /* Vote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vote.swift; sourceTree = "<group>"; };
+		0BA70BED2274F0CE00FEEC11 /* VoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteController.swift; sourceTree = "<group>"; };
+		0BA70BEF2274F14C00FEEC11 /* Voting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Voting.storyboard; sourceTree = "<group>"; };
+		0BA70BF12274F16200FEEC11 /* Results.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Results.storyboard; sourceTree = "<group>"; };
+		0BA70BF32274F18700FEEC11 /* Combined.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Combined.storyboard; sourceTree = "<group>"; };
+		0BA70BF72274F2EE00FEEC11 /* VoteControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteControllerProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +73,6 @@
 			isa = PBXGroup;
 			children = (
 				0BA70BD12274EDB200FEEC11 /* AppDelegate.swift */,
-				0BA70BD52274EDB200FEEC11 /* Main.storyboard */,
 				0BA70BD82274EDB300FEEC11 /* Assets.xcassets */,
 				0BA70BDA2274EDB300FEEC11 /* LaunchScreen.storyboard */,
 				0BA70BDD2274EDB300FEEC11 /* Info.plist */,
@@ -71,9 +80,31 @@
 				0BA70BE52274EF7B00FEEC11 /* VotingViewController.swift */,
 				0BA70BE72274EF9000FEEC11 /* CombinedViewController.swift */,
 				0BA70BE92274EFCE00FEEC11 /* PollingTabBarViewController.swift */,
-				0BA70BEB2274F02A00FEEC11 /* Vote.swift */,
+				0BA70BF52274F1EC00FEEC11 /* Views */,
+				0BA70BF62274F20500FEEC11 /* Model */,
+				0BA70BED2274F0CE00FEEC11 /* VoteController.swift */,
+				0BA70BF72274F2EE00FEEC11 /* VoteControllerProtocol.swift */,
 			);
 			path = Survey;
+			sourceTree = "<group>";
+		};
+		0BA70BF52274F1EC00FEEC11 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0BA70BF32274F18700FEEC11 /* Combined.storyboard */,
+				0BA70BF12274F16200FEEC11 /* Results.storyboard */,
+				0BA70BEF2274F14C00FEEC11 /* Voting.storyboard */,
+				0BA70BD52274EDB200FEEC11 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0BA70BF62274F20500FEEC11 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0BA70BEB2274F02A00FEEC11 /* Vote.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +166,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BA70BDC2274EDB300FEEC11 /* LaunchScreen.storyboard in Resources */,
+				0BA70BF22274F16200FEEC11 /* Results.storyboard in Resources */,
 				0BA70BD92274EDB300FEEC11 /* Assets.xcassets in Resources */,
 				0BA70BD72274EDB200FEEC11 /* Main.storyboard in Resources */,
+				0BA70BF02274F14C00FEEC11 /* Voting.storyboard in Resources */,
+				0BA70BF42274F18700FEEC11 /* Combined.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,7 +184,9 @@
 				0BA70BE42274EF6700FEEC11 /* ResultsTableViewController.swift in Sources */,
 				0BA70BEC2274F02A00FEEC11 /* Vote.swift in Sources */,
 				0BA70BD22274EDB200FEEC11 /* AppDelegate.swift in Sources */,
+				0BA70BF82274F2EE00FEEC11 /* VoteControllerProtocol.swift in Sources */,
 				0BA70BEA2274EFCE00FEEC11 /* PollingTabBarViewController.swift in Sources */,
+				0BA70BEE2274F0CE00FEEC11 /* VoteController.swift in Sources */,
 				0BA70BE62274EF7B00FEEC11 /* VotingViewController.swift in Sources */,
 				0BA70BE82274EF9000FEEC11 /* CombinedViewController.swift in Sources */,
 			);

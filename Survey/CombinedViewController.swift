@@ -8,8 +8,9 @@
 
 import UIKit
 
-class CombinedViewController: UIViewController {
-
+class CombinedViewController: UIViewController, VoteControllerProtocol {
+    var voteController:VoteControllerProtocol?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
