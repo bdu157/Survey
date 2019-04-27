@@ -25,7 +25,7 @@ class ResultsTableViewController: UITableViewController, VoteControllerProtocol 
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return voteController?.votes.count ?? 0
+        return voteController.votes.count ?? 0
     }
 
     
