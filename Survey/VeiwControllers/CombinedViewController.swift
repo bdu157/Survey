@@ -9,12 +9,11 @@
 import UIKit
 
 class CombinedViewController: UIViewController, VoteControllerProtocol {
-    var voteController:VoteControllerProtocol?
+    var voteController:VoteController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
 
@@ -27,10 +26,9 @@ class CombinedViewController: UIViewController, VoteControllerProtocol {
             guard let destination = segue.destination as? VotingViewController else {return}
             destination.voteController = voteController
         }
-        else if segue.identifier = "ToResults" {
+        else if segue.identifier == "ToResults" {
             guard let desitination = segue.destination as? ResultsTableViewController else {return}
             desitination.voteController = voteController
         }
     }
-
 }

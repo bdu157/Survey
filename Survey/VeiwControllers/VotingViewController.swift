@@ -9,11 +9,12 @@
 import UIKit
 
 class VotingViewController: UIViewController, VoteControllerProtocol {
-    var voteController: VoteControllerProtocol?
+    var voteController: VoteController?
 
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var responseTextField: UITextField!
     override func viewDidLoad() {
+        
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.

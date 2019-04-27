@@ -10,7 +10,7 @@ import UIKit
 
 class ResultsTableViewController: UITableViewController, VoteControllerProtocol {
     
-    var voteController: VoteControllerProtocol?
+    var voteController: VoteController?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,14 +25,14 @@ class ResultsTableViewController: UITableViewController, VoteControllerProtocol 
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return voteController.votes.count ?? 0
+        return voteController?.votes.count ?? 0
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "VoteCell", for: indexPath)
 
-        guard let vote = voteController?.votes[index.row] else {return UITableViewCell()}
+        guard let vote = voteController?.votes[indexPath.row] else {return UITableViewCell()}
 
         cell.textLabel?.text = vote.name
         cell.detailTextLabel?.text = vote.response

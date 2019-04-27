@@ -20,8 +20,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="bmX-wD-HSU" kind="relationship" relationship="viewControllers" id="gtR-mu-W0V"/>
-                        <segue destination="vYV-Ju-ozy" kind="relationship" relationship="viewControllers" id="ioY-P3-kFj"/>
-                        <segue destination="n26-fY-Ppe" kind="relationship" relationship="viewControllers" id="AW1-y6-hDv"/>
+                        <segue destination="n26-fY-Ppe" kind="relationship" relationship="viewControllers" id="CVe-gv-HVN"/>
+                        <segue destination="vYV-Ju-ozy" kind="relationship" relationship="viewControllers" id="4QK-cN-Phk"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e9j-du-ULh" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -32,7 +32,7 @@
         <scene sceneID="N9q-jb-rzY">
             <objects>
                 <viewControllerPlaceholder storyboardName="Voting" id="bmX-wD-HSU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Mm0-NR-dML"/>
+                    <tabBarItem key="tabBarItem" title="Voting" id="Mm0-NR-dML"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LdP-Qo-Ts4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -42,7 +42,7 @@
         <scene sceneID="Nl9-UT-3VK">
             <objects>
                 <viewControllerPlaceholder storyboardName="Results" id="n26-fY-Ppe" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="EPe-oU-NZ2"/>
+                    <tabBarItem key="tabBarItem" title="Results" id="EPe-oU-NZ2"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MzL-wv-oBo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -52,7 +52,7 @@
         <scene sceneID="Mbk-RJ-ihk">
             <objects>
                 <viewControllerPlaceholder storyboardName="Combined" id="vYV-Ju-ozy" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="9Q4-eX-R6k"/>
+                    <tabBarItem key="tabBarItem" title="Combined" id="9Q4-eX-R6k"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SLg-cT-aEJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

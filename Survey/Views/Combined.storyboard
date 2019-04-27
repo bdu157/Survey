@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EAn-rH-Kgu">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,25 +15,33 @@
             <objects>
                 <viewController id="EAn-rH-Kgu" customClass="CombinedViewController" customModule="Survey" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zbT-Nw-Isz">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9K5-Jt-6QJ">
-                                <rect key="frame" x="80" y="81" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9K5-Jt-6QJ" userLabel="VotingViewContainer">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="402"/>
                                 <connections>
                                     <segue destination="B0R-Rz-0Lp" kind="embed" identifier="ToVoting" id="Sb2-Uv-nbY"/>
                                 </connections>
                             </containerView>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S7L-AA-3cI">
-                                <rect key="frame" x="80" y="369" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S7L-AA-3cI">
+                                <rect key="frame" x="0.0" y="410" width="375" height="402"/>
                                 <connections>
                                     <segue destination="kOz-JY-e0s" kind="embed" identifier="ToResults" id="Bwj-FQ-As2"/>
                                 </connections>
                             </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9K5-Jt-6QJ" firstAttribute="top" secondItem="zbT-Nw-Isz" secondAttribute="top" id="2hv-Vw-lTS"/>
+                            <constraint firstItem="S7L-AA-3cI" firstAttribute="leading" secondItem="tzg-nb-ktY" secondAttribute="leading" id="BKo-1P-XB5"/>
+                            <constraint firstItem="S7L-AA-3cI" firstAttribute="height" secondItem="9K5-Jt-6QJ" secondAttribute="height" id="CsQ-ff-UuS"/>
+                            <constraint firstItem="9K5-Jt-6QJ" firstAttribute="trailing" secondItem="tzg-nb-ktY" secondAttribute="trailing" id="D6e-lw-uEH"/>
+                            <constraint firstItem="9K5-Jt-6QJ" firstAttribute="leading" secondItem="tzg-nb-ktY" secondAttribute="leading" id="JOb-PJ-viZ"/>
+                            <constraint firstItem="S7L-AA-3cI" firstAttribute="trailing" secondItem="tzg-nb-ktY" secondAttribute="trailing" id="Rjw-gf-2Ph"/>
+                            <constraint firstAttribute="bottom" secondItem="S7L-AA-3cI" secondAttribute="bottom" id="m2d-gX-7Qt"/>
+                            <constraint firstItem="S7L-AA-3cI" firstAttribute="top" secondItem="9K5-Jt-6QJ" secondAttribute="bottom" constant="8" id="tIG-ji-t53"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="tzg-nb-ktY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Combined" id="GJb-0B-v8E"/>
@@ -41,7 +49,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a7b-FA-ga3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="532" y="765"/>
+            <point key="canvasLocation" x="532" y="764.03940886699513"/>
         </scene>
         <!--Voting-->
         <scene sceneID="hpk-jp-ZlA">

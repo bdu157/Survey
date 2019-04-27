@@ -58,6 +58,7 @@
 			children = (
 				0BA70BD02274EDB200FEEC11 /* Survey */,
 				0BA70BCF2274EDB200FEEC11 /* Products */,
+				0BA70BFA227508CC00FEEC11 /* Resources */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,18 +73,11 @@
 		0BA70BD02274EDB200FEEC11 /* Survey */ = {
 			isa = PBXGroup;
 			children = (
-				0BA70BD12274EDB200FEEC11 /* AppDelegate.swift */,
-				0BA70BD82274EDB300FEEC11 /* Assets.xcassets */,
-				0BA70BDA2274EDB300FEEC11 /* LaunchScreen.storyboard */,
-				0BA70BDD2274EDB300FEEC11 /* Info.plist */,
-				0BA70BE32274EF6700FEEC11 /* ResultsTableViewController.swift */,
-				0BA70BE52274EF7B00FEEC11 /* VotingViewController.swift */,
-				0BA70BE72274EF9000FEEC11 /* CombinedViewController.swift */,
-				0BA70BE92274EFCE00FEEC11 /* PollingTabBarViewController.swift */,
-				0BA70BF52274F1EC00FEEC11 /* Views */,
-				0BA70BF62274F20500FEEC11 /* Model */,
-				0BA70BED2274F0CE00FEEC11 /* VoteController.swift */,
 				0BA70BF72274F2EE00FEEC11 /* VoteControllerProtocol.swift */,
+				0BA70BFB227508FF00FEEC11 /* ModelController */,
+				0BA70BF62274F20500FEEC11 /* Model */,
+				0BA70BF52274F1EC00FEEC11 /* Views */,
+				0BA70BF92275017A00FEEC11 /* VeiwControllers */,
 			);
 			path = Survey;
 			sourceTree = "<group>";
@@ -105,6 +99,36 @@
 				0BA70BEB2274F02A00FEEC11 /* Vote.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		0BA70BF92275017A00FEEC11 /* VeiwControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0BA70BE32274EF6700FEEC11 /* ResultsTableViewController.swift */,
+				0BA70BE52274EF7B00FEEC11 /* VotingViewController.swift */,
+				0BA70BE72274EF9000FEEC11 /* CombinedViewController.swift */,
+				0BA70BE92274EFCE00FEEC11 /* PollingTabBarViewController.swift */,
+			);
+			path = VeiwControllers;
+			sourceTree = "<group>";
+		};
+		0BA70BFA227508CC00FEEC11 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0BA70BD12274EDB200FEEC11 /* AppDelegate.swift */,
+				0BA70BD82274EDB300FEEC11 /* Assets.xcassets */,
+				0BA70BDA2274EDB300FEEC11 /* LaunchScreen.storyboard */,
+				0BA70BDD2274EDB300FEEC11 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0BA70BFB227508FF00FEEC11 /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+				0BA70BED2274F0CE00FEEC11 /* VoteController.swift */,
+			);
+			path = ModelController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,7 +360,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C22Z4773SH;
-				INFOPLIST_FILE = Survey/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -354,7 +378,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C22Z4773SH;
-				INFOPLIST_FILE = Survey/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
