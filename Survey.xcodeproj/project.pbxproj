@@ -104,9 +104,9 @@
 		0BA70BF92275017A00FEEC11 /* VeiwControllers */ = {
 			isa = PBXGroup;
 			children = (
+				0BA70BE72274EF9000FEEC11 /* CombinedViewController.swift */,
 				0BA70BE32274EF6700FEEC11 /* ResultsTableViewController.swift */,
 				0BA70BE52274EF7B00FEEC11 /* VotingViewController.swift */,
-				0BA70BE72274EF9000FEEC11 /* CombinedViewController.swift */,
 				0BA70BE92274EFCE00FEEC11 /* PollingTabBarViewController.swift */,
 			);
 			path = VeiwControllers;
