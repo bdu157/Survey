@@ -9,15 +9,13 @@
 import UIKit
 
 class CombinedViewController: UIViewController, VoteControllerProtocol {
-    var voteController:VoteController?
+    var voteController: VoteController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
-    
-
-
+ 
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation

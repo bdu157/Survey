@@ -16,9 +16,16 @@ class PollingTabBarViewController: UITabBarController {
         super.viewDidLoad()
 
         for childVC in children {
-            if var childVC = childVC as? VoteControllerProtocol {  //to pick up the ones that have VoteControllerProtocols
+            if var childVC = childVC as? VoteControllerProtocol {
                 childVC.voteController = voteController
             }
         }
+
     }
 }
+
+
+/*
+ Thank you for quick response! it makes more sense now. another question. Would this work without using protocols? I would see it as no because swift vocabulary and Places apps have segue to pass datas to next viewController but this one has no way to pass data through? am i understanding correctly?
+ 
+ */

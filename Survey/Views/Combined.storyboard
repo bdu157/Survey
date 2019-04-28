@@ -24,7 +24,7 @@
                                     <segue destination="B0R-Rz-0Lp" kind="embed" identifier="ToVoting" id="Sb2-Uv-nbY"/>
                                 </connections>
                             </containerView>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S7L-AA-3cI">
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S7L-AA-3cI" userLabel="ResultsViewContainer">
                                 <rect key="frame" x="0.0" y="410" width="375" height="402"/>
                                 <connections>
                                     <segue destination="kOz-JY-e0s" kind="embed" identifier="ToResults" id="Bwj-FQ-As2"/>
