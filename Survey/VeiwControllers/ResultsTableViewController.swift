@@ -11,7 +11,6 @@ import UIKit
 class ResultsTableViewController: UITableViewController, VoteControllerProtocol {
     var voteController: VoteController?
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,18 +20,24 @@ class ResultsTableViewController: UITableViewController, VoteControllerProtocol 
         tableView.reloadData()
     }
 
-    // MARK: - Table view data source
+    // MARK: - Table vieww data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return voteController?.votes.count ?? 0
     }
 
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "VoteCell", for: indexPath)
-        guard let vote = voteController?.votes[indexPath.row] else {return UITableViewCell()}
+      guard let vote = voteController?.votes[indexPath.row] else {return UITableViewCell()}
         cell.textLabel?.text = vote.name
         cell.detailTextLabel?.text = vote.response
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        voteController?.votes.remove(at: indexPath.row)
+        let selectedRow = [indexPath]
+        tableView.deleteRows(at: selectedRow, with: .fade)
+    }
+    
 }
